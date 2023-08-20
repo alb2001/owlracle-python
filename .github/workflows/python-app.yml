@@ -5,9 +5,9 @@ name: Python application
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 permissions:
   contents: read
@@ -35,6 +35,6 @@ jobs:
         poetry install
     - name: Test with pytest
       env:
-        DextoolsAPIKey: ${{ secrets.OwlracleAPIKey }}
+        OwlracleAPIKey: ${{ secrets.OWLRACLEAPIKEY }}
       run: |
         poetry run pytest
