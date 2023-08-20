@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "owlracle-python"
+version = "0.1.0"
+description = "A simple Python API wrapper for Owlracle"
+repository = "https://github.com/alb2001/owlracle-python"
+authors = ["alb2001 <alb2001@outlook.es>"]
+license = "MIT"
+readme = "README.md"
+keywords = ["owlracle", "api", "wrapper", "blockchain", "gas", "oracle"]
+packages = [{include = "owlracle_python"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.31.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+ipykernel = "^6.25.1"
+notebook = "^7.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
