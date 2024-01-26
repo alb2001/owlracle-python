@@ -36,6 +36,6 @@ jobs:
         poetry install
     - name: Test with pytest
       env:
-          OwlracleAPIKey: ${{ secrets.OWLRACLEAPIKEY }}
+        OwlracleAPIKey: ${{ secrets.OWLRACLEAPIKEY }}
       run: |
         poetry run pytest
